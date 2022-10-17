@@ -5,6 +5,10 @@
 - 常用售前网址
 
   [思科专家讲堂网址](https://cs.co/asksuccess)
+  
+  [黑带认证](https://salesconnect.cisco.com/#/program/HUB-14191)
+  
+  
 
 
 
@@ -14,7 +18,7 @@
 
   [协作分析工具Collaboration Solutions Analyzer](https://cway.cisco.com/tools/CollaborationSolutionsAnalyzer/)
 
-  [查看PRT log的工具_内部](https://scripts.cisco.com/app/tagscoutapp/?product=webexmeetings_client)
+  
 
-## 
+
 
