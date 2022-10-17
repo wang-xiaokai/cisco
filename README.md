@@ -4,13 +4,17 @@
 
 - 常用售前网址
 
-  [思科专家讲堂网址](https://cs.co/asksuccess)
-  
-  [黑带认证](https://salesconnect.cisco.com/#/program/HUB-14191)
-  
+  - [思科专家讲堂网址](https://cs.co/asksuccess)
+
+  - [黑带认证](https://salesconnect.cisco.com/#/program/HUB-14191)
+
+  - 思科设备图片
+    - [Visio网址](https://www.cisco.com/c/en/us/products/visio-stencil-listing.html)
+    - [第三方网址](https://vecta.io/symbols/260/cisco-unified-computing-system-and-hyperflex-systems-hci-part-2/113/ucsc-c240-m4s2-rear)
+
   
 
-
+   	
 
 # 思科售后
 
