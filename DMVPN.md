@@ -8,6 +8,8 @@
 
 ![DMVPN Phase2拓扑图](https://cdn.jsdelivr.net/gh/wang-xiaokai/images/202210282031650.png "DMVPN Phase2拓扑图")
 
+<img src="https://cdn.jsdelivr.net/gh/wang-xiaokai/images/202210282031650.png" alt="DMVPN Phase2拓扑图" width="70%" height="50%" />
+
 步骤1：基本配置初始化
 
 （1）Hub-1路由器配置初始化
