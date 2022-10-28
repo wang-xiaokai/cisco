@@ -1,3 +1,7 @@
+---
+typora-root-url: ..\images
+---
+
 ## VPN
 
 SVTI仅仅可以用在两个站点之间是静态固定Global地址，无法使用在站点在PAT后面或站点使用动态Global地址的场景。
@@ -12,7 +16,7 @@ GRE over IPSec两端必须是固定Global IP地址
 
 
 
-![image-20221028162815591](https://cdn.jsdelivr.net/gh/wang-xiaokai/images/202210281628638.png)
+
 
 
 
