@@ -12,13 +12,3 @@ GRE over IPSec两端必须是固定Global IP地址
 
 
 
-
-
-
-
-
-
-
-
-
-
