@@ -1,7 +1,3 @@
----
-typora-root-url: ..\images
----
-
 ## VPN
 
 SVTI仅仅可以用在两个站点之间是静态固定Global地址，无法使用在站点在PAT后面或站点使用动态Global地址的场景。
@@ -11,10 +7,6 @@ DMVPN是思科的私有VPN技术。其实就是高级版的GRE over IPsec VPN。
 DMVPN，GRE over IPSec，L2TP over IPsec 加密点等于通信点，推荐使用传输模式进行封装
 
 GRE over IPSec两端必须是固定Global IP地址
-
-
-
-
 
 
 
