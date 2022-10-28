@@ -12,6 +12,12 @@ GRE over IPSec两端必须是固定Global IP地址
 
 
 
+![image-20221028162815591](https://cdn.jsdelivr.net/gh/wang-xiaokai/images/202210281628638.png)
+
+
+
+
+
 
 
 
