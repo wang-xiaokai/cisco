@@ -1016,6 +1016,7 @@ interface Tunnel0
  ip nhrp map multicast dynamic 
  ip nhrp map 172.16.1.200 61.128.1.200
  ip nhrp map multicast 61.128.1.200
+ ip nhrp redirect
 show run interface tunnel 0  
 ```
 
@@ -1032,6 +1033,7 @@ interface Tunnel0
  ip nhrp map multicast dynamic 
  ip nhrp map 172.16.1.100 61.128.1.100
  ip nhrp map multicast 61.128.1.100
+ ip nhrp redirect
 show run interface tunnel 0  
 ```
 
@@ -1051,6 +1053,7 @@ interface Tunnel0
  ip nhrp map multicast 61.128.1.200
  ip nhrp nhs 172.16.1.100
  ip nhrp nhs 172.16.1.200
+ ip nhrp shortcut
 show run interface tunnel 0  （查看已经完成的配置）
 ping 172.16.1.100   （Spoke-1通过tunnel口已经可以成功访问到HUB-1）
 ```
@@ -1072,6 +1075,7 @@ interface Tunnel0
  ip nhrp map multicast 61.128.1.200
  ip nhrp nhs 172.16.1.100 
  ip nhrp nhs 172.16.1.200
+ ip nhrp shortcut
 show run interface tunnel 0  
 ping 172.16.1.100 
 
@@ -1091,6 +1095,7 @@ interface Tunnel0
  ip nhrp authentication cisco
  ip nhrp nhs dynamic nbma hub-1.cloudpbc.cn multicast
  ip nhrp nhs dynamic nbma hub-2.cloudpbc.cn multicast
+ ip nhrp shortcut
 show run interface tunnel 0  
 ping 172.16.1.100
 
@@ -1118,6 +1123,7 @@ interface Tunnel0
  ip nhrp map multicast 61.128.1.200
  ip nhrp nhs 172.16.1.100
  ip nhrp nhs 172.16.1.200
+ ip nhrp shortcut
 show run interface tunnel 0  （查看已经完成的配置）
 ping 172.16.1.100   （Spoke-3通过tunnel口已经可以成功访问到HUB-1）
 ```
@@ -1167,8 +1173,8 @@ router eigrp 100
 
 ```
 interface Tunnel0
- no ip split-horizon eigrp 100 （关闭水平分割特性。注意只配置no ip split-horizon，则关闭RIP而不是EIGRP）
- no ip next-hop-self eigrp 100 （关闭EIGRP的next-hop-self特性）
+ ip summary-address eigrp 100 192.168.0.0 255.255.0.0
+第三阶段的DMVPN不再需要关闭水平分割（no ip split-horizon eigrp 100），也不在需要关闭关闭EIGRP的next-hop-self特性来优化路由（no ip next-hop-self eigrp 100）。只需要中心给所有的分支站点发送一条汇总路由。
 ```
 
 
@@ -1234,12 +1240,8 @@ Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
 
 Gateway of last resort is 202.100.1.10 to network 0.0.0.0
 
-D     192.168.2.0/24 [90/28288000] via 172.16.1.2, 00:02:01, Tunnel0
-                     [90/28288000] via 172.16.1.2, 00:02:01, Tunnel0
-D     192.168.3.0/24 [90/28288000] via 172.16.1.3, 00:01:58, Tunnel0
-                     [90/28288000] via 172.16.1.3, 00:01:58, Tunnel0
-D     192.168.100.0/24 [90/26882560] via 172.16.1.200, 00:02:04, Tunnel0
-                       [90/26882560] via 172.16.1.100, 00:02:04, Tunnel0
+D     192.168.0.0/16 [90/26882560] via 172.16.1.200, 00:02:19, Tunnel0
+                     [90/26882560] via 172.16.1.100, 00:02:19, Tunnel0
 ```
 
 （3）在分支站点一（Spoke1）上查看IPSec状态
@@ -1260,7 +1262,7 @@ Spoke-1#show crypto ipsec sa
      PERMIT, flags={origin_is_acl,}
     #pkts encaps: 94, #pkts encrypt: 94, #pkts digest: 94
     #pkts decaps: 95, #pkts decrypt: 95, #pkts verify: 95
-    
+
 Spoke-1#show crypto session
 Interface: Tunnel0
 Session status: UP-ACTIVE     
