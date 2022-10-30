@@ -19,9 +19,7 @@
 
 <img src="https://cdn.jsdelivr.net/gh/wang-xiaokai/images/202210292035761.png" alt="单云单HUB拓扑图" title="单云单HUB拓扑图" width="70%" height="50%" align="left"/>
 
-
-
-
+<br/>
 
 ##### 1.1 第二阶段DMVPN实验
 
@@ -557,9 +555,7 @@ show crypto session
 
 <img src="https://cdn.jsdelivr.net/gh/wang-xiaokai/images/202210301037607.png" alt="单云双HUB拓扑图" title="单云双HUB拓扑图" width="70%" height="50%" align="left" />
 
-
-
-
+<br/>
 
 ##### 2.1 第二阶段DMVPN实验
 
