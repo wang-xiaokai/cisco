@@ -17,9 +17,10 @@ DMVPN
 
 #### 1. 单云单HUB配置实例
 
-<p align='left'>
+<p align='right'>
     <img src="https://cdn.jsdelivr.net/gh/wang-xiaokai/images/202210292035761.png" alt="单云单HUB拓扑图" title="单云单HUB拓扑图" width="70%" height="50%"/>
 </p>
+
 
 
 
