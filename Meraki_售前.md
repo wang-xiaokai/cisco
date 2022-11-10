@@ -7,3 +7,5 @@
 [MX Sizing Principles](https://meraki.cisco.com/product-collateral/mx-sizing-guide/?file)
 
 [Meraki MS Series 交换机配件](https://meraki.cisco.com/product-collateral/ms-family-datasheet/?file)
+
+[Meraki Visio图](https://meraki.cisco.com/product-collateral/cisco-meraki-visio-stencils/)

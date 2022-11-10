@@ -732,7 +732,7 @@ router ospf 1
  network 202.100.2.0 0.0.0.255 area 0
 ```
 
-（6）在GM-2和GM-2上测试全网可路由
+（6）在GM-1和GM-2上测试全网可路由
 
 ```
 GM-1#ping 172.16.2.1 source 172.16.1.1
@@ -999,7 +999,7 @@ KS-2(gdoi-coop-ks-config)#peer address ipv4 202.100.1.1
 KS-2(gdoi-coop-ks-config)#local priority 75
 ```
 
-（4）查看协作密钥服务器的状态
+（3）查看协作密钥服务器的状态
 
 ```
 KS-2#show crypto gdoi ks coop 
@@ -1411,7 +1411,7 @@ KS-1(config-gdoi-group)#server local
 KS-1(gdoi-local-server)#address ipv4 202.100.1.1
 ```
 
-（5）配置密钥更新（单播）
+（4）配置密钥更新（单播）
 
 ```
 KS-1(gdoi-local-server)#rekey authentication mypubkey rsa getvpnkey
@@ -1419,7 +1419,7 @@ KS-1(gdoi-local-server)#rekey algorithm aes 256 （默认加密算法为3des，H
 KS-1(gdoi-local-server)#rekey transport unicast （配置GETVPN使用单播传输密钥更新信息，注意默认为组播）
 ```
 
-（6）配置IPSec 安全关联
+（5）配置IPSec 安全关联
 
 ```
 KS-1(gdoi-local-server)#sa ipsec 1
@@ -1454,7 +1454,7 @@ KS-2(config-gdoi-group)#server local
 KS-2(gdoi-local-server)#address ipv4 202.100.1.2
 ```
 
-（5）配置密钥更新（单播）
+（4）配置密钥更新（单播）
 
 ```
 KS-2(gdoi-local-server)#rekey authentication mypubkey rsa getvpnkey
@@ -1462,7 +1462,7 @@ KS-2(gdoi-local-server)#rekey algorithm aes 256 （默认加密算法为3des，H
 KS-2(gdoi-local-server)#rekey transport unicast （配置GETVPN使用单播传输密钥更新信息，注意默认为组播）
 ```
 
-（6）配置IPSec 安全关联
+（5）配置IPSec 安全关联
 
 ```
 KS-2(gdoi-local-server)#sa ipsec 1
@@ -1612,5 +1612,7 @@ VRF-GM-1#show crypto ipsec sa
     #pkts not compressed: 0, #pkts compr. failed: 0
     #pkts not decompressed: 0, #pkts decompress failed: 0
     #send errors 0, #recv errors 0
+VRF-GM-1#show ip route vrf Site-1 eigrp
+VRF-GM-1#show ip route vrf Site-2 eigrp
 ```
 
