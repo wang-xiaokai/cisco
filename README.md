@@ -20,7 +20,7 @@
   
   - [往期思科代理商培训汇总](https://community.cisco.com/t5/%E5%AE%A2%E6%88%B7%E4%BB%A3%E7%90%86%E5%95%86%E5%8D%9A%E5%AE%A2/%E5%BE%80%E6%9C%9F%E6%80%9D%E7%A7%91%E4%BB%A3%E7%90%86%E5%95%86%E5%9F%B9%E8%AE%AD%E6%B1%87%E6%80%BB/ba-p/4443929)
   
-  
+  - [CBS交换机在线模拟设备](https://community.cisco.com/t5/small-business-online-device-emulators/bd-p/911-discussions-online-device-emulators)
   
   
   
