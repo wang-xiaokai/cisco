@@ -24,7 +24,5 @@ GRE over IPSec两端必须是固定Global IP地址
 
 
 
-![1](https://github--images.oss-cn-zhangjiakou.aliyuncs.com/202301161631811.png)
-
 
 
