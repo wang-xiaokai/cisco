@@ -555,7 +555,7 @@ show crypto session
 
 
 
-<img src="https://cdn.jsdelivr.net/gh/wang-xiaokai/images/202210301037607.png" alt="单云双HUB拓扑图" title="单云双HUB拓扑图" width="70%" height="50%" />
+<img src="https://github--images.oss-cn-zhangjiakou.aliyuncs.com/202210301037607.png" alt="单云双HUB拓扑图" title="单云双HUB拓扑图" width="70%" height="50%" />
 
 <br/>
 
