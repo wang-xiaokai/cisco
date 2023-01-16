@@ -18,8 +18,13 @@ GRE over IPSec两端必须是固定Global IP地址
 
 - SSLVPN    优点:可以做高级特性
 - IPSec   1.EzVPN（IKEv1） 2.FlexVPN（IKEv2）
-
 - VPDN  1.PPTP  2. L2TP over IPsec  3.PPPoe   缺点是仅仅就是通
+
+
+
+
+
+![1](https://github--images.oss-cn-zhangjiakou.aliyuncs.com/202301161631811.png)
 
 
 
