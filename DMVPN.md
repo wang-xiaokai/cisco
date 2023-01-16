@@ -18,8 +18,9 @@ DMVPN
 #### 1. 单云单HUB配置实例
 
 <p align='left'>
-    <img src="https://cdn.jsdelivr.net/gh/wang-xiaokai/images/202210292035761.png" alt="单云单HUB拓扑图" title="单云单HUB拓扑图" width="70%" height="50%"  />
+    <img src="https://github--images.oss-cn-zhangjiakou.aliyuncs.com/202210292035761.png" alt="单云单HUB拓扑图" title="单云单HUB拓扑图" width="70%" height="50%"  />
 </p>
+
 
 
 
@@ -1280,7 +1281,7 @@ Peer: 61.128.1.3 port 500
 
 
 
-<img src="https://cdn.jsdelivr.net/gh/wang-xiaokai/images/202210311608947.png" alt="树状拓扑图" title="树状拓扑图" width="80%" height="80%" />
+<img src="https://github--images.oss-cn-zhangjiakou.aliyuncs.com/202210311608947.png" alt="树状拓扑图" title="树状拓扑图" width="80%" height="80%" />
 
 
 
