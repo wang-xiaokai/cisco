@@ -22,7 +22,7 @@
   
   
   
-  [What Is Power over Ethernet (PoE)?](https://www.cisco.com/c/en/us/solutions/enterprise-networks/what-is-power-over-ethernet.html)
+  
   
    	
 
