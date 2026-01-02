@@ -6,7 +6,9 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/licensing-options/cisc
 Taxonomy for Cisco Nexus 9000 Series Part Numbers
 https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/hw/n9k_taxonomy.html
 
-
+**Note**: The Cisco Nexus 9000 Series switches support static routes, switch virtual interfaces (SVIs), and Hot Standby Router Protocol (HSRP) by default without any license.
+Table 2.   NX-OS License Package features Included in Tier-Based Licenses for Cisco Nexus 9000 and 3000 Series Switches
+https://www.cisco.com/c/en/us/td/docs/switches/datacenter/licensing-options/cisco-nexus-licensing-options-guide.html
 
 设备风向选择：
 
